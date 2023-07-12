@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Proxy middleware
 app.use('/search', createProxyMiddleware({
-  target: 'https://www.google.com',
+  target: 'https://www.google.co.za/',
   changeOrigin: true,
   pathRewrite: {
     '^/search': '/search?q='
